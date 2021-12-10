@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1 id="texto">
+            Calculadora
+        </h1>
+        <img id="imagem" src="calculadora.png" alt="">
+        <div class="calculadora">
+            <p id="resultado"></p>
+            <ul id="base">
+            <button type="button" onclick="clean()">C</button>
+            <button type="button" onclick="back()"><</button>
+            <button type="button" onclick="insert('/')">/</button>
+            <button type="button" onclick="insert('*')">X</button>
+            <br>
+            <button type="button" onclick="insert('7')">7</button>
+            <button type="button" onclick="insert('8')">8</button>
+            <button type="button" onclick="insert('9')">9</button>
+            <button type="button" onclick="insert('-')">-</button>
+            <br>
+            <button type="button" onclick="insert('4')">4</button>
+            <button type="button" onclick="insert('5')">5</button>
+            <button type="button" onclick="insert('6')">6</button>
+            <button type="button" onclick="insert('+')">+</button>
+            <br>
+            <button type="button" onclick="insert('1')">1</button>
+            <button type="button" onclick="insert('2')">2</button>
+            <button type="button" onclick="insert('3')">3</button>
+            <button id="igual" type="button" onclick="calcular()">=</button>
+            <br>
+            <button type="button" onclick="insert('0')">0</button>
+            <button type="button" onclick="insert('.')">.</button>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
